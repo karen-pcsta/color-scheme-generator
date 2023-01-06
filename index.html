@@ -6,5 +6,48 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Color Scheme Generator</title>
   </head>
-  <body></body>
+  <body>
+    <header>
+      <div class="chosen-color">
+        <input type="color" />
+      </div>
+      <div>
+        <select name="color-mode" id="color-mode-select">
+          <option value="monochrome">Monochrome</option>
+          <option value="monochrome-dark">Monochrome-dark</option>
+          <option value="monochrome-light">Monochrome-light</option>
+          <option value="analogic">Analogic</option>
+          <option value="complement">Complement</option>
+          <option value="analogic-complement">Analogic-complement</option>
+          <option value="triad">Triad</option>
+          <option value="quad">Quad</option>
+        </select>
+      </div>
+      <div class="get-scheme-btn">
+        <button>Get color scheme</button>
+      </div>
+    </header>
+    <section class="color-schemes-container">
+      <div class="color-container">
+        <div id="colorContainer1"></div>
+        <div id="colorValue1"></div>
+      </div>
+      <div class="color-container">
+        <div id="colorContainer2"></div>
+        <div id="colorValue2"></div>
+      </div>
+      <div class="color-container">
+        <div id="colorContainer3"></div>
+        <div id="colorValue3"></div>
+      </div>
+      <div class="color-container">
+        <div id="colorContainer4"></div>
+        <div id="colorValue4"></div>
+      </div>
+      <div class="color-container">
+        <div id="colorContainer5"></div>
+        <div id="colorValue5"></div>
+      </div>
+    </section>
+  </body>
 </html>
