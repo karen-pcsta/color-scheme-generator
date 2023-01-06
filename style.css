@@ -1,0 +1,53 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+}
+
+/* Layout */
+
+.display-container {
+  max-width: 550px;
+  width: 90%;
+  margin: 0 auto;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1em;
+  box-shadow: rgba(33, 35, 38, 0.1) 0px 10px 10px -10px;
+}
+
+/* Header */
+
+input[type="color"] {
+  width: 61px;
+  height: 40px;
+}
+
+select {
+  width: 18.75em;
+  padding: 0.5em;
+  border: 1px solid #d1d5db;
+  background-color: #ffffff;
+  border-radius: 2px;
+  font-weight: 500;
+  font-size: 1rem;
+}
+
+.get-scheme-btn button {
+  padding: 0.8em;
+  border: 1px solid #d1d5db;
+  background-color: #ffffff;
+  border-radius: 2px;
+  font-weight: 400;
+  font-size: 0.75rem;
+}
