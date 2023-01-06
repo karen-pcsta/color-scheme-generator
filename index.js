@@ -14,12 +14,10 @@ function getScheme() {
       const colorDivs = document.querySelectorAll(".color-container > div:nth-of-type(1)");
       const hexCodeTextFields = document.querySelectorAll(".color-value");
       const hexColors = getColorHex(colorsArray);
-      let colourIndex = 0;
 
       for (let i = 0; i < colorDivs.length; i++) {
-        colorDivs[i].setAttribute("style", "background-color:" + hexColors[colourIndex]);
-        hexCodeTextFields[i].textContent = hexColors[colourIndex];
-        colourIndex++;
+        colorDivs[i].setAttribute("style", "background-color:" + hexColors[i]);
+        hexCodeTextFields[i].textContent = hexColors[i];
       }
     });
 }
