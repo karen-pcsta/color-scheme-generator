@@ -1,6 +1,8 @@
 const colorSelector = document.getElementById("colorSelector");
 const colorModeSelector = document.getElementById("colorModeSelector");
 
+document.querySelector("button").addEventListener("click", getScheme);
+
 function getScheme() {
   const url = `https://www.thecolorapi.com/scheme?hex=${colorSelector.value.slice(1)}&mode=${
     colorModeSelector.value
@@ -8,18 +10,24 @@ function getScheme() {
   fetch(url)
     .then((response) => response.json())
     .then((data) => {
-      let colorsArray = data.colors;
-      console.log(colorsArray);
-      getColorHex(colorsArray);
+      const colorsArray = data.colors;
+      const colorDivs = document.querySelectorAll(".color-container > div:nth-of-type(1)");
+      const hexCodeTextFields = document.querySelectorAll(".color-value");
+      const hexColors = getColorHex(colorsArray);
+      let colourIndex = 0;
+
+      for (let i = 0; i < colorDivs.length; i++) {
+        colorDivs[i].setAttribute("style", "background-color:" + hexColors[colourIndex]);
+        hexCodeTextFields[i].textContent = hexColors[colourIndex];
+        colourIndex++;
+      }
     });
 }
-
-document.querySelector("button").addEventListener("click", getScheme);
 
 function getColorHex(data) {
   let hexValues = [];
   for (let object of data) {
-    colorDiv.push(object.hex.value);
+    hexValues.push(object.hex.value);
   }
   return hexValues;
 }
