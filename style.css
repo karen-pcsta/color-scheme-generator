@@ -33,6 +33,7 @@ header {
 input[type="color"] {
   width: 61px;
   height: 40px;
+  cursor: pointer;
 }
 
 select {
@@ -43,6 +44,7 @@ select {
   border-radius: 2px;
   font-weight: 500;
   font-size: 1rem;
+  cursor: pointer;
 }
 
 .get-scheme-btn button {
@@ -52,6 +54,7 @@ select {
   border-radius: 2px;
   font-weight: 400;
   font-size: 0.75rem;
+  cursor: pointer;
 }
 
 /* Color scheme containers */
