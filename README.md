@@ -7,6 +7,8 @@ After completing Scrimba's URLs & REST section of Module 9 - Working with APIs, 
 
 Throughout this section, we were taught how to use Javascript's fetch API in order to get data from an API and display or interact with it.
 
+You can check it at: https://karen-pcsta.github.io/color-scheme-generator/
+
 We also learned:
 
 - HTTP Requests
